@@ -1,0 +1,17 @@
+/**
+  * Override Bulma's burger button
+  */
+
+
+.navbar-burger.burger-alt
+    +hamburger($navbar-height)
+    span
+        width: 35px
+        height: 4px
+        margin-left: -25px
+        &:nth-child(1)
+            margin-top: -13px
+        &:nth-child(2)
+            margin-top: -4px
+        &:nth-child(3)
+            margin-top: 5px
