@@ -1,0 +1,11 @@
+/**
+  * To change the size of the footer's logo
+  * Will copy Bootstrap's img-fluid class, except it will be smaller in mobile devices.
+  */
+
+.footer-logo {
+    max-width: 17rem;
+    @include media-breakpoint-down(xs) {
+        max-width: 15rem;
+    }
+}

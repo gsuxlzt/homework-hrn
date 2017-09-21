@@ -1,0 +1,16 @@
+/**
+  * For texts inside the footer
+  * Texts will be smaller, white in color, and blue on hover
+  */
+
+.footer-text {
+    @extend .text-white;
+    font-size: $small-font-size;
+    a {
+        color: $white;
+        &:hover {
+            color: $active-color !important;
+            text-decoration: none;
+        }
+    }
+}
