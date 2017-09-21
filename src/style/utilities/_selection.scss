@@ -1,0 +1,12 @@
+/**
+  * Custom class for the second navbar.
+  * Effect will be a change in color on hover.
+  */
+
+.selection {
+    color: $text-color;
+    &:hover {
+        color: $active-color !important;
+    }
+
+}

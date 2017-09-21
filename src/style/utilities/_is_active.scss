@@ -4,7 +4,7 @@
   */
 
 .is-active {
-    @extend .text-info;
+    color: $active-color !important;
     @extend .font-weight-bold;
     &:after {
         content: "";

@@ -2,8 +2,8 @@
   <div class="container-fluid bg-gray height-maxed has-shadow">
     <div class="row no-gutters d-flex align-items-center justify-content-center py-3 py-sm-4">
       <div class="col-3 text-center fixed-height" v-for="(selection,index) in selections" :key="index">
-        <a class="small-font-sm no-underline" 
-           :class="{'is-active' : selection.isActive, 'text-dark' : !selection.isActive}" 
+        <a class="small-font-sm selection no-underline" 
+           :class="{'is-active' : selection.isActive}" 
            href="#" 
            @click="toggleActive(index)">
           <i :class="selection.icon" class="fa fa-fw d-block mx-auto d-sm-inline-block"></i>
