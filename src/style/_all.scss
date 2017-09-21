@@ -2,15 +2,17 @@
   * All styles are collected here
   */
 
+// add transition to all elements
+
+* {
+  transition: all 0.3s;
+}
 
 // Variables
 @import 'variables';
 
 //Bootstrap
 @import "~bootstrap/scss/bootstrap";
-
-// Components
-
 
 // Utilities
 @import 'utilities/utils';

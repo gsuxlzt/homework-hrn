@@ -6,7 +6,6 @@
 .is-active {
     @extend .text-info;
     @extend .font-weight-bold;
-    transition: all 0.3s;
     &:after {
         content: "";
         position: absolute;

@@ -1,0 +1,19 @@
+/**
+  * For classes that need a fixed or modified height
+  */
+
+// Height of the navbar and the selection container
+.height-maxed {
+    height: 4rem;
+    max-height: 4rem;
+    @include media-breakpoint-down(sm) {
+      height:5rem;
+      max-height:5rem;
+    }
+}
+
+// Height of the selection items
+.fixed-height {
+  height: 60px;
+  max-height: 60px;
+}

@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-
-    <hello></hello>
+    <selection></selection>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Selection from './components/Selection'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Selection
   }
 }
 </script>
