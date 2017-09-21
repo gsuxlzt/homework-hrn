@@ -1,0 +1,19 @@
+/**
+  *This file is to change Bootstrap variables.
+  *As much as possible, we don't want to override Bootstrap's classes
+  *because it might not be usable to other parts of the app.
+  *Instead, we'll change the variables to suit our needs.
+  */
+
+//Import Roboto font
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+
+// Initial variables to be changed
+
+//Modifications here
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+//Own variables here

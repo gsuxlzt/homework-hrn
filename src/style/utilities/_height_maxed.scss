@@ -1,0 +1,12 @@
+/**
+  * Fix height to 4rem
+  */
+
+.height-maxed {
+    height: 4rem;
+    max-height: 4rem;
+    @include media-breakpoint-down(sm) {
+      height:5rem;
+      max-height:5rem;
+    }
+}

@@ -3,8 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 
-// Loads the bulma css framework
-require('./style/_all.sass')
+// Loads the styles including bootstrap
+import 'bootstrap'
+require('./style/_all.scss')
 
 Vue.config.productionTip = false
 

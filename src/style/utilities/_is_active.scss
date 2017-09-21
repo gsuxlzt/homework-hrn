@@ -1,0 +1,27 @@
+/**
+  * For the active nav element
+  * This includes the font-weight, the font-color, and the inverted triangle below the container
+  */
+
+.is-active {
+    @extend .text-info;
+    @extend .font-weight-bold;
+    transition: all 0.3s;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: -6rem;
+        top: 2.5rem;
+        box-sizing: border-box;
+        border: 12px solid black;
+        border-color: transparent transparent #f8f8f8 #f8f8f8;
+        transform-origin: 0 0;
+        transform: rotate(-45deg);
+        box-shadow: -3px 3px 3px 0 rgba(109, 102, 102, 0.14);
+        @include media-breakpoint-down(sm) {
+            top: 3.5rem;
+        }
+    }
+}

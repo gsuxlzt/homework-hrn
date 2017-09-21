@@ -1,0 +1,24 @@
+/**
+  * For individual styling of borders
+  * Will have each of the positions, as well as a no-border class
+  */
+
+// top border
+.top-border {
+    border-top: solid $border-width $border-color;
+}
+// right border
+.right-border {
+    border-right: solid $border-width $border-color;
+}// bottom border
+.bottom-border {
+    border-bottom: solid $border-width $border-color;
+}// left border
+.left-border {
+    border-left: solid $border-width $border-color;
+}
+
+// no border
+.no-border {
+    border: none;
+}

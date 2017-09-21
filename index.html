@@ -4,22 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>hrn-homework</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a href="#" class="navbar-item navbar-image">
-              <img src="./static/img/logo.png" alt="HRN Eu Ltd." class="image">
-            </a>
-            <button class="button navbar-burger burger-alt is-black">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+      <nav class="navbar navbar-dark bg-black height-maxed" role="navigation" aria-label="main navigation">
+        <a href="#" class="navbar-brand">
+          <img src="./static/img/logo.png" alt="HRN Eu Ltd.">
+        </a>
+        <button class="navbar-toggler no-border" data-toggle="collapse" data-target="#web-navigation" aria-controls="web-navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <div class="container-fluid bg-gray height-maxed has-shadow">
+        <div class="row no-gutters justify-content-center py-4">
+          <div class="col-3 text-center">
+            <div class="is-active selection">
+              <i class="fa fa-user fa-fw"></i>
+              <span> SINGLE ATTANDEE</span>
+            </div>
           </div>
-        </nav>
-    </div>
+          <div class="col-3 text-center">
+            <div>
+              <i class="fa fa-users fa-fw"></i>
+              <span class="is-primary"> GROUP TICKETS</span>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div>
+              <i class="fa fa-crosshairs fa-fw"></i>
+              <span class="is-primary"> INVESTORS</span>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div>
+              <i class="fa fa-lightbulb-o fa-fw"></i> 
+              <span class="is-primary"> STARTUPS</span>
+            </div>
+          </div>
+        </div>
+      </div>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
