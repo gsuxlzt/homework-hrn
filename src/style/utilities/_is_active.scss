@@ -12,16 +12,25 @@
         position: absolute;
         width: 0;
         height: 0;
-        margin-left: -6rem;
-        top: 2.5rem;
+        margin-left: -2rem;
+        top: 4rem;
         box-sizing: border-box;
-        border: 12px solid black;
+        border: 8px solid black;
         border-color: transparent transparent #f8f8f8 #f8f8f8;
         transform-origin: 0 0;
         transform: rotate(-45deg);
         box-shadow: -3px 3px 3px 0 rgba(109, 102, 102, 0.14);
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-up(sm) {
+            margin-left: -6rem;
             top: 3.5rem;
+            border: 12px solid black;
+            border-color: transparent transparent #f8f8f8 #f8f8f8;
+        }
+        @include media-breakpoint-up(md) {
+            margin-left: -6rem;
+            top: 2.5rem;
+            border: 12px solid black;
+            border-color: transparent transparent #f8f8f8 #f8f8f8;
         }
     }
 }

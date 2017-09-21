@@ -1,0 +1,13 @@
+/**
+  * The text of the selections are not fluid when it comes to mobile views.
+  * This helper is to change the font-size for small views.
+  */
+
+.small-font-sm {
+  @include media-breakpoint-down(sm) {
+    font-size: $small-font-size;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $xs-font-size;
+  }
+}
