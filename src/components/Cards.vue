@@ -5,7 +5,7 @@
         {{ paragraph }}
       </div> 
     </div>
-    <div class="row justify-content-center mt-33">
+    <div class="row justify-content-center mt-3">
       <div class="col-12 col-md-6 col-xl-3 align-self-center" v-for="(card, index) in cards" :key="index">
         <div class="card text-center bg-gray mb-5 not-rounded has-shadow">
           <div class="card-body text-active">
