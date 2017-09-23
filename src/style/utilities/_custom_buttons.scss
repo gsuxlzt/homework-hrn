@@ -2,7 +2,7 @@
   * For the buttons that we will be using.
   */
 
-  .btn-active {
+.btn-active {
     cursor: pointer;
     @extend .btn-info;
     background: $active-color !important;
@@ -10,6 +10,21 @@
         border: solid $border-width $active-color !important;
         background: $white !important;
         color: $active-color !important;
+    }
+}
+
+.btn-active-inverse {
+    cursor: pointer;
+    border: solid $border-width $active-color;
+    background: $white;
+    color: $active-color;
+    &:hover {
+        background: $active-color;
+        color: $white;
+    }
+    &:active, &:focus {
+        outline: none;
+        box-shadow: none;
     }
 }
 

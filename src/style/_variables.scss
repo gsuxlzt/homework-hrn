@@ -20,3 +20,22 @@ $text-color: #999999;
 $white: #ffffff;
 $font-weight-bold: 900;
 $font-size-base: 1.1rem;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px
+) !default;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1380px
+) !default;

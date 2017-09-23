@@ -1,6 +1,11 @@
 <template>
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
+      <div class="col-12 col-md-6 mx-auto text-center mb-5">
+        {{ paragraph }}
+      </div> 
+    </div>
+    <div class="row justify-content-center mt-33">
       <div class="col-12 col-md-6 col-xl-3 align-self-center" v-for="(card, index) in cards" :key="index">
         <div class="card text-center bg-gray mb-5 not-rounded has-shadow">
           <div class="card-body text-active">
@@ -9,12 +14,12 @@
             <div class="font-weight-bold"
             :class="{'display-3' : !card.isPopular, 'display-2' : card.isPopular}">&euro;{{ card.price}}</div>
             <div v-if="card.savings" class="savings small mb-1">Save &euro;{{ card.savings }}</div>
-            <div v-else-if="card.deadline" class="savings">&nbsp;</div>
-            <div v-if="card.deadline">Until {{ card.deadline }}</div>
-            <div v-else>
+            <div v-else-if="card.deadline" class="savings mb-1">&nbsp;</div>
+            <div v-if="card.deadline" class="mb-2">Until {{ card.deadline }}</div>
+            <div v-else class="mb-2">
               <div class="text-muted small">Do you have a promo code?</div>
-                <input type="text" class="form-control-sm my-1" placeholder="Type it here & pick a day">
-                <ul class="list-unstyled list-inline custom-input">
+                <input type="text" class="form-control-sm custom-input my-1" placeholder="Type it here & pick a day">
+                <ul class="list-unstyled list-inline custom-radio">
                   <li class="list-inline-item">
                     <input id="day1" class="form-check-input" type="radio" name="day" value="option1">
                     <label for="day1" class="form-check-label">DAY 1</label>
@@ -29,12 +34,26 @@
                   </li>
                 </ul>
             </div>
+            <div class="benefits" v-bind:style="{'height': getHeight}">
+              <ul class="text-left">
+                <li v-for="(benefit,index) in card.benefits" :key="index">
+                  <span class="text-dark text-left">
+                    {{ benefit }}
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
           <button class="btn btn-block text-uppercase not-rounded font-weight-bold p-4"
           :class="{'btn-red' : card.isPopular, 'btn-active': !card.isPopular}">
             book now
           </button>
+        </div>
       </div>
+      <div class="col-12 text-center mb-5">
+        <button class="btn btn-active-inverse text-uppercase font-weight-bold not-rounded py-2 px-4" @click="toggleBenefits">
+          {{ btnText }}
+        </button>
       </div>
     </div>
   </div>
@@ -52,6 +71,9 @@ export default {
   name: 'cards',
   data () {
     return {
+      paragraph: 'Fashion axe truffaut migas Farm-to-table PBR&B. Drinking vinegar sustainable helvetica sartorial. Dreatmcatcher live-edge lo-fi, chartreuse echo park pinterest distillery glossier plaid fingerstache. Fashion axe keytar truffaut migas Farm-to-table PBR&B. Drinking vinegar sustainable helvetica',
+      btnText: 'compare benefits',
+      showBenefits: false,
       cards: [
         {
           isPopular: false,
@@ -86,6 +108,25 @@ export default {
           benefits: benefits
         }
       ]
+    }
+  },
+  methods: {
+    toggleBenefits () {
+      switch (this.btnText) {
+        case 'compare benefits':
+          this.showBenefits = true
+          this.btnText = 'close'
+          break
+        case 'close':
+          this.showBenefits = false
+          this.btnText = 'compare benefits'
+          break
+      }
+    }
+  },
+  computed: {
+    getHeight () {
+      return this.showBenefits ? '13rem' : '0px'
     }
   }
 }

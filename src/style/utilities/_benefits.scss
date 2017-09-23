@@ -1,0 +1,11 @@
+/**
+  * Container for the benefits of each card
+  * Animation will also be defined here.
+  */
+
+.benefits {
+    height: 0px; 
+    transition: height 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    overflow: hidden;
+    box-sizing: border-box;
+}
