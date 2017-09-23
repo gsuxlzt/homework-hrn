@@ -13,9 +13,9 @@
             <li class="py-1">
               <span class="text-uppercase text-active font-weight-bold">Regular</span>
               <span class="text-uppercase">&nbsp;
-                <i class="fa fa-clock-o"></i>
+                <i class="fa fa-clock-o fa-lg"></i>
                 <span class="small-font-sm">until</span>&nbsp;
-                <span class="text-danger text-uppercase font-weight-bold small">sept. 30</span>
+                <span class="text-red text-uppercase font-weight-bold small"> aug. 31</span>
               </span>
             </li>
             <li class="py-1">
@@ -40,9 +40,11 @@
             <li class="list-inline-item mr-0">
               <span class="text-uppercase text-active font-weight-bold">Regular</span>
               <span class="text-uppercase">&nbsp;
-                <i class="fa fa-clock-o"></i>
-                <span class="small-font">until</span>&nbsp;
-                <span class="text-danger text-uppercase font-weight-bold small">sept. 30</span>
+                <i class="fa fa-clock-o icon-font"></i>
+                <div class="d-inline-block stacked">
+                <span class="small-font d-block">until</span>&nbsp;
+                <span class="text-red text-uppercase font-weight-bold small d-block"> aug. 31</span>
+                </div>
               </span>
               <span class="slash-active">/</span>
             </li>

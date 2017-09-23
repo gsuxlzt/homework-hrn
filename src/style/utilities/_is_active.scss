@@ -11,8 +11,8 @@
         position: absolute;
         width: 0;
         height: 0;
-        margin-left: -2rem;
-        top: 4rem;
+        margin-left: -3rem;
+        top: 4.5rem;
         box-sizing: border-box;
         border: 8px solid black;
         border-color: transparent transparent #f8f8f8 #f8f8f8;
@@ -20,14 +20,20 @@
         transform: rotate(-45deg);
         box-shadow: -3px 3px 3px 0 rgba(109, 102, 102, 0.14);
         @include media-breakpoint-up(sm) {
-            margin-left: -6rem;
-            top: 3.5rem;
+            margin-left: -4rem;
+            top: 4rem;
             border: 12px solid black;
             border-color: transparent transparent #f8f8f8 #f8f8f8;
         }
         @include media-breakpoint-up(md) {
             margin-left: -6rem;
-            top: 2.5rem;
+            top: 3.4rem;
+            border: 12px solid black;
+            border-color: transparent transparent #f8f8f8 #f8f8f8;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-left: -6rem;
+            top: 3rem;
             border: 12px solid black;
             border-color: transparent transparent #f8f8f8 #f8f8f8;
         }
@@ -38,7 +44,3 @@
     color: #1386b4 !important;
 }
 
-.btn-active {
-    @extend .btn-info;
-    background: $active-color !important;
-}

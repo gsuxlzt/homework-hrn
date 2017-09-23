@@ -1,6 +1,7 @@
 /**
   * The text of the selections are not fluid when it comes to mobile views.
   * This helper is to change the font-size for small views.
+  * Also included is a style rule for the text-active helper to increase the font.
   */
 
 .small-font-sm {
@@ -14,4 +15,8 @@
 
 .small-font {
   font-size: $xs-font-size;
+}
+
+.text-active.lg-font {
+  font-size: $lg-font-size;
 }

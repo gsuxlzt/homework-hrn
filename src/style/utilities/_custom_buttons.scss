@@ -1,0 +1,25 @@
+/**
+  * For the buttons that we will be using.
+  */
+
+  .btn-active {
+    cursor: pointer;
+    @extend .btn-info;
+    background: $active-color !important;
+    &:hover {
+        border: solid $border-width $active-color !important;
+        background: $white !important;
+        color: $active-color !important;
+    }
+}
+
+.btn-red {
+    cursor: pointer;
+    @extend .btn-danger;
+    background: $red-color !important;
+    &:hover {
+        border: solid $border-width $red-color !important;
+        background: $white !important;
+        color: $red-color !important;
+    }
+}

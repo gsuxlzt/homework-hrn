@@ -5,12 +5,15 @@
 
 .footer-text {
     @extend .text-white;
-    font-size: $small-font-size;
+    font-size: $font-size-base;
     a {
         color: $white;
         &:hover {
             color: $active-color !important;
             text-decoration: none;
         }
+    }
+    @include media-breakpoint-down(md) {
+        font-size: $small-font-size
     }
 }

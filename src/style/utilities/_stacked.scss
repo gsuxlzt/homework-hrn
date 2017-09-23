@@ -1,0 +1,15 @@
+/**
+  * For the date in the regular section
+  * Will decrease its line height in order to make them look like their stacked.
+  */
+
+.stacked {
+    line-height: 0.5;
+    vertical-align: text-bottom;
+}
+
+.sm-stacked {
+    @include media-breakpoint-down(sm) {
+        line-height: 1;
+    }
+}

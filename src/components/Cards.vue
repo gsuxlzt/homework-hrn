@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-6 col-lg-3 align-self-center" v-for="(card, index) in cards" :key="index">
+      <div class="col-12 col-md-6 col-xl-3 align-self-center" v-for="(card, index) in cards" :key="index">
         <div class="card text-center bg-gray mb-5 not-rounded has-shadow">
           <div class="card-body text-active">
-            <div v-if="card.isPopular" class="h4 text-danger text-uppercase mt-2 mb-0">most popular</div>
+            <div v-if="card.isPopular" class="h4 text-red text-uppercase mt-2 mb-0">most popular</div>
             <div class="title text-center">{{ card.title }}</div>
             <div class="font-weight-bold"
             :class="{'display-3' : !card.isPopular, 'display-2' : card.isPopular}">&euro;{{ card.price}}</div>
@@ -30,8 +30,8 @@
                 </ul>
             </div>
           </div>
-          <button class="btn btn-block text-uppercase not-rounded"
-          :class="{'btn-danger' : card.isPopular, 'btn-active': !card.isPopular}">
+          <button class="btn btn-block text-uppercase not-rounded font-weight-bold p-4"
+          :class="{'btn-red' : card.isPopular, 'btn-active': !card.isPopular}">
             book now
           </button>
       </div>
