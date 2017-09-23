@@ -6,8 +6,9 @@
           <div class="card-body text-active">
             <div v-if="card.isPopular" class="h4 text-danger text-uppercase mt-2 mb-0">most popular</div>
             <div class="title text-center">{{ card.title }}</div>
-            <div class="display-3 font-weight-bold">&euro;{{ card.price}}</div>
-            <div v-if="card.savings" class="savings">Save &euro;{{ card.savings }}</div>
+            <div class="font-weight-bold"
+            :class="{'display-3' : !card.isPopular, 'display-2' : card.isPopular}">&euro;{{ card.price}}</div>
+            <div v-if="card.savings" class="savings small mb-1">Save &euro;{{ card.savings }}</div>
             <div v-else-if="card.deadline" class="savings">&nbsp;</div>
             <div v-if="card.deadline">Until {{ card.deadline }}</div>
             <div v-else>
