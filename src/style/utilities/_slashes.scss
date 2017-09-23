@@ -1,0 +1,17 @@
+/**
+  * Styles for the slashes.
+  * These will be shown at larger screens to separate each ticket selection
+  */
+
+.slash {
+    @extend .text-blue;
+    margin: 0 0.6rem;
+}
+
+.slash-active {
+    @extend .slash;
+    @extend .text-active;
+    @extend .font-weight-bold;
+    vertical-align: middle;
+    font-size: 2rem;
+}

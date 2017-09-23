@@ -1,0 +1,12 @@
+/**
+  * Since bootstrap has no blue button, we'll pattern their btn-primary class
+  * only going to change background and text color
+  */
+
+.span-blue {
+  background: $blue-color;
+  color: $white;
+  border: solid $border-width $blue-color;
+  padding: 0.1rem !important;
+  vertical-align: text-bottom;
+  }
