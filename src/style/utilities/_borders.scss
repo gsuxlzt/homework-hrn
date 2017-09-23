@@ -22,3 +22,9 @@
 .no-border {
     border: none;
 }
+
+// not a border, but if you want to remove the border radius
+
+.not-rounded {
+    border-radius: 0px;
+}

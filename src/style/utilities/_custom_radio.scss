@@ -1,0 +1,23 @@
+/**
+  * Remove the radio button for the selection.
+  * Selecting a day change its background and text to the active color
+  */
+
+.custom-input {
+    margin: 0px;
+    input {
+        visibility:hidden;
+    }
+    label {
+        cursor: pointer;
+    }
+    input:checked +label {
+        background: $active-color;
+        color: $white;
+
+    }
+    .form-check-label {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}

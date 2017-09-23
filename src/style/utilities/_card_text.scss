@@ -1,0 +1,17 @@
+/**
+  * Style for the title of the selections.
+  */
+
+.title {
+    @extend .text-uppercase;
+    @extend .font-weight-bold;
+    @extend .card-title;
+    @extend .h4;
+    height: $h4-font-size * 3;
+}
+
+.savings {
+  @extend .text-muted;
+  font-size: $font-size-base;
+  height: $line-height-base * 2 + rem;
+}

@@ -33,3 +33,12 @@
         }
     }
 }
+
+.is-active-text {
+    color: #1386b4 !important;
+}
+
+.btn-active {
+    @extend .btn-info;
+    background: $active-color !important;
+}
