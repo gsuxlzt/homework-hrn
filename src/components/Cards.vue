@@ -34,7 +34,7 @@
                   </li>
                 </ul>
             </div>
-            <div class="benefits" v-bind:style="{'height': getHeight}">
+            <div class="benefits mt-4" v-bind:style="{'height': getHeight}">
               <ul class="text-left">
                 <li v-for="(benefit,index) in card.benefits" :key="index">
                   <span class="text-dark text-left">
