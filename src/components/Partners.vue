@@ -9,6 +9,8 @@
         </div>
       </div>
       <div class="col-12 text-center">
+        <!-- since there is only one image, it is rendered five times.
+        can be changed to accept an array of images that will be rendered accordingly. -->
         <div class="d-inline-block m-4" v-for="(n,index) in 5" :key="index">
           <img class="img-fluid fixed-height" src="./../../static/img/partner.png">
         </div>

@@ -1,4 +1,6 @@
 <template>
+  <!-- main section that will render all of the dynamic data.
+  the site is divided into components in order to make it easier to read. -->
   <div id="app">
     <selection></selection>
     <ticket-types></ticket-types>

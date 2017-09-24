@@ -4,7 +4,8 @@
       <!-- the selections below the navbar. will be rendered dynamically -->
       <div class="row no-gutters align-items-center justify-content-center sm-stacked py-2 py-sm-3 py-md-2 py-lg-3">
         <div class="col-3 text-center fixed-height" v-for="(selection,index) in selections" :key="index">
-         <!-- clicking the corresponding icon will change it's color -->
+         <!-- clicking the corresponding icon will make it active
+         (change color, arrow pointing down) -->
           <a class="small-font-sm selection no-underline" 
             :class="{'is-active' : selection.isActive}" 
             href="#" 
@@ -53,9 +54,8 @@ export default {
     // for adding the active class to the selection
     toggleActive (index) {
       this.selections.map(selection => {
-        selection.isActive = false
+        selection.isActive = this.selections[index] === selection
       })
-      this.selections[index].isActive = true
     }
   }
 }
