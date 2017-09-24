@@ -1,8 +1,10 @@
 <template>
   <div class="container-fluid bg-gray has-shadow height-maxed">
     <div class="container">
+      <!-- the selections below the navbar. will be rendered dynamically -->
       <div class="row no-gutters align-items-center justify-content-center sm-stacked py-2 py-sm-3 py-md-2 py-lg-3">
         <div class="col-3 text-center fixed-height" v-for="(selection,index) in selections" :key="index">
+         <!-- clicking the corresponding icon will change it's color -->
           <a class="small-font-sm selection no-underline" 
             :class="{'is-active' : selection.isActive}" 
             href="#" 
@@ -12,6 +14,7 @@
           </a>
         </div>
       </div>
+      <!-- selections end -->
     </div>
   </div>
 </template>
@@ -21,6 +24,7 @@ export default {
   name: 'selection',
   data () {
     return {
+      // each selection
       selections: [
         {
           name: 'SINGLE ATTENDEE',
@@ -46,6 +50,7 @@ export default {
     }
   },
   methods: {
+    // for adding the active class to the selection
     toggleActive (index) {
       this.selections.map(selection => {
         selection.isActive = false
@@ -55,8 +60,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-
-</style>

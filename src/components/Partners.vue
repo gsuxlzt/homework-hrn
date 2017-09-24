@@ -1,5 +1,7 @@
 <template>
   <div class="container mb-5">
+    <!-- for displaying the partners. can be made dynamic using javascript.
+    for the purpose of the mockup, each partner will be the same. -->
     <div class="row justify-content-center">
       <div class="col-12 text-center mb-4">
         <div class="text-muted text-uppercase">
@@ -12,6 +14,7 @@
         </div>
       </div>
     </div>
+    <!-- partners end -->
   </div>
 </template>
 

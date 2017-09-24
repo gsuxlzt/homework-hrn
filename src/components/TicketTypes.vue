@@ -1,6 +1,8 @@
 <template>
+    <!-- static layout for the ticket types. -->
     <div class="container my-5">
       <div class="row">
+        <!-- ticket types for mobile view (stacked to one another) -->
         <div class="col-12 d-block d-md-none text-center">
           <ul class="list-unstyled">
             <li class="py-1">
@@ -26,6 +28,8 @@
             </li>
           </ul>
         </div>
+        <!-- mobile view end -->
+        <!-- ticket types for large devices (one line) -->
         <div class="col-12 d-none d-md-block text-center">
           <ul class="list-inline">
             <li class="list-inline-item mr-0">
@@ -57,6 +61,7 @@
             </li>
           </ul>
         </div>
+        <!-- large devices view end -->
       </div>
     </div>
 </template>
