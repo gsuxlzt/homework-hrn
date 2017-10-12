@@ -2,6 +2,8 @@
 
 > Homework for HRN-EU Ltd.
 
+Created using Bootstrap 4 and VueJS
+
 ## Build Setup
 
 ``` bash
@@ -13,8 +15,5 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
